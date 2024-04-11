@@ -14,6 +14,8 @@ File Upload, Zip Upload
 
 Vectorisation, Metadata-powered Embedding
 
+Docker-run GROBID Internal Chunking Service
+
 Latent Space Visualisation, Manual Clustering for Fine-tuning
 
 3D Visualisations with Contextual Information
