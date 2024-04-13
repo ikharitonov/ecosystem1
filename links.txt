@@ -3,3 +3,8 @@ https://stackoverflow.com/questions/45578060/bridging-a-python-back-end-and-java
 Explore jQuerry, Django/Flask, D3.js
 
 https://github.com/emencia/django-local-ai
+
+
+13/04: langchain benchmark tutorial: https://huggingface.co/learn/cookbook/en/advanced_rag
+
+to speed up: https://github.com/ggerganov/llama.cpp/discussions/3530
