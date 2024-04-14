@@ -8,3 +8,12 @@ https://github.com/emencia/django-local-ai
 13/04: langchain benchmark tutorial: https://huggingface.co/learn/cookbook/en/advanced_rag
 
 to speed up: https://github.com/ggerganov/llama.cpp/discussions/3530
+
+Consider ingredients like these with Django:
+Ingredients:
+1. Django, langchain, faiss, sentence transformers libraries to be installed.
+2. Create the Faiss database with vid_id, title and description embedding
+3. Create the app and wire up the views and urls functions.
+4. Use bootstrap and DTL to build the frontend. Jumbotron example in bootstrap is best suited for the project
+
+Faiss could be good for fast similarity search and clustering
