@@ -17,3 +17,6 @@ Ingredients:
 4. Use bootstrap and DTL to build the frontend. Jumbotron example in bootstrap is best suited for the project
 
 Faiss could be good for fast similarity search and clustering
+
+djabgo vector-db
+https://github.com/pkavumba/django-vectordb
