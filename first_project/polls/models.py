@@ -1,4 +1,4 @@
-from django.db import models
+bfrom django.db import models
 from django.utils import timezone
 import datetime
 
@@ -23,3 +23,4 @@ class Choice(models.Model):
     
     def __str__(self):
         return self.choice_text
+    
