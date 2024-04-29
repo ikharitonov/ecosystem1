@@ -32,3 +32,15 @@ Iteration 1:
 - build a MySQL database registering embedded chunks with unique IDs and locations to chunk content
 - construct a HTML+JS frontend that can talk to Python backend - can inject files from website, pass them to and launch embedding scripts; display MySQL database contents on the website; launch dim. red. scripts
 - construct 2D/3D visualisations of chunks in latent space
+
+29/04/2024:
+
+Use Case 1:
+- Datasets consist of pdf/word text files with diverse semantic content
+- Uploaded datasets are scanned for directory structure and registered
+- A text summarisation model is then applied to each document
+- Short summaries are converted to embeddings
+- Dimensionality reduction is applied to embeddings
+- Embedding projections are visualised in 2D/3D in the frontend, coloring is applied according to directory structure
+
+Future implementation: Knowledge Graphs
