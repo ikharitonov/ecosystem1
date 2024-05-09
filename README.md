@@ -44,4 +44,4 @@ Use Case 1:
 - Dimensionality reduction is applied to embeddings
 - Embedding projections are visualised in 2D/3D in the frontend, coloring is applied according to directory structure
 
-Future implementation: Knowledge Graphs
+Future implementation: Knowledge Graphs, reference allowed file type schema
