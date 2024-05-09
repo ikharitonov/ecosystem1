@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Details</title>
+</head>
+<body>
+    <h1>Dataset: {{ dataset.dataset_unit_name }}</h1>
+    <p>Description: {{ dataset.dataset_unit_description }}</p>
+    <p>Date added: {{ dataset.date_added }}</p>
+    <p>Directory structure:</p>
+    {{directory_structure_html|safe}}
+</body>
+</html>

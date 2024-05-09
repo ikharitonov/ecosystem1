@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datasets</title>
+</head>
+<body>
+    <h1>Datasets</h1>
+    {% for dataset in output_list%}
+        <p><a href="{% url 'process:detail' dataset.pk dataset.dataset_unit_name|slugify %}">{{ dataset.dataset_unit_name }}</a></p>
+    {% endfor %}
+</body>
+</html>

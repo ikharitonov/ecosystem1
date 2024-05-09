@@ -33,6 +33,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
+    'process.apps.ProcessConfig',
     'vector_injest.apps.VectorInjestConfig',
     'django.contrib.admin',
     'django.contrib.auth',
