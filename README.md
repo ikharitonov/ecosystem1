@@ -38,6 +38,7 @@ Iteration 1:
 Use Case 1:
 - Datasets consist of pdf/word text files with diverse semantic content
 - Uploaded datasets are scanned for directory structure and registered
+- Implement Structure Elements
 - A text summarisation model is then applied to each document
 - Short summaries are converted to embeddings
 - Dimensionality reduction is applied to embeddings
