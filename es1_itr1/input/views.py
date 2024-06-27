@@ -7,6 +7,7 @@ import zipfile
 
 from .forms import DatasetForm
 from .models import DatasetUnit
+from process.models import StructureUnit
 
 # Create your views here.
 
@@ -15,16 +16,32 @@ TODO:
 - handle creation of dataset with the same name
 '''
 
-def scan_directory_structure(directory_path):
+    # name
+    # dataset_belongs_to
+    # parent
+    # children
+    # type: Content or Folder
+    # element_format: PDF File
+    # path
+    # run during html directory scanning functi
+
+def scan_directory_structure(directory_path, current_dataset, parent=None):
     result = {}
     if os.path.isdir(directory_path):
+        new_structure_unit = StructureUnit()
         result[os.path.basename(directory_path)] = []
+        new_structure_unit.name = os.path.basename(directory_path)
+        new_structure_unit.path = directory_path
+        new_structure_unit.type = 'folder'
+        if parent: new_structure_unit.parent = parent
+        
         for item in os.listdir(directory_path):
             item_path = os.path.join(directory_path, item)
             if os.path.isfile(item_path):
                 result[os.path.basename(directory_path)].append(item)
             elif os.path.isdir(item_path):
                 result[os.path.basename(directory_path)].append(scan_directory_structure(item_path))
+        
     return result
 
 def main(request):

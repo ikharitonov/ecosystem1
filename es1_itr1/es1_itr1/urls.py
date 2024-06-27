@@ -22,7 +22,7 @@ from process.views import front_page_view
 urlpatterns = [
     path('view/', include("process.urls")),
     path('process/', include("process.urls")),
-    path('input/', include("vector_injest.urls")),
+    path('input/', include("input.urls")),
     path('admin/', admin.site.urls),
     path('', front_page_view),
 ]

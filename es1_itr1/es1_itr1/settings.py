@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-r%qg!x_^e)x51n_yjzt!-5@j-2*_0&1$%f3(%#wiivyhladf%k
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '10.51.106.97',
+    '10.51.106.107',
 ]
 
 
@@ -34,7 +34,7 @@ ALLOWED_HOSTS = [
 
 INSTALLED_APPS = [
     'process.apps.ProcessConfig',
-    'vector_injest.apps.VectorInjestConfig',
+    'vector_injest.apps.InputConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
